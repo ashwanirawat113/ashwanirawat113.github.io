@@ -204,7 +204,7 @@ section { position: relative; z-index: 1; }
 .sk-name { font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: .3rem; }
 .sk-desc { font-size: .8rem; color: var(--muted); line-height: 1.6; margin-bottom: 1.3rem; }
 .bars { display: flex; flex-direction: column; gap: .5rem; }
-.bar-row {}
+.bar-row { display: block; }
 .bar-lbl { display: flex; justify-content: space-between; font-family: monospace; font-size: .58rem; color: var(--muted); text-transform: uppercase; margin-bottom: .25rem; }
 .bar-track { height: 2px; background: var(--muted2); border-radius: 1px; overflow: hidden; }
 .bar-fill { height: 100%; border-radius: 1px; background: linear-gradient(90deg, var(--accent), var(--accent2)); transition: width 1s ease; }
@@ -692,47 +692,58 @@ footer {
   <a href="#hero" class="ft-top">↑ Back to top</a>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
 <script>
-// Hamburger
+// ================= NAV =================
 const hbg = document.getElementById('hbg');
 const nl  = document.getElementById('navLinks');
+
 hbg.addEventListener('click', () => {
   hbg.classList.toggle('open');
   nl.classList.toggle('open');
 });
-nl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-  hbg.classList.remove('open');
-  nl.classList.remove('open');
-}));
 
-// Contact form
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+nl.querySelectorAll('a').forEach(a =>
+  a.addEventListener('click', () => {
+    hbg.classList.remove('open');
+    nl.classList.remove('open');
+  })
+);
 
-<script>
-  emailjs.init('abc123XYZdef');
+// ================= EMAILJS INIT =================
+emailjs.init("xrlxgM5LRiRDlJKrT");
 
-  document.getElementById('cf').addEventListener('submit', function(e) {
-    e.preventDefault();
+// ================= CONTACT FORM =================
+document.getElementById("cf").addEventListener("submit", function(e) {
+  e.preventDefault();
 
-  const btn = document.getElementById('cfbtn');
-  const ok  = document.getElementById('cfok');
-  const err = document.getElementById('cferr');
-  const PK  = 'xrlxgM5LRiRDlJKrT';
-  if (PK === 'xrlxgM5LRiRDlJKrT') {
-    err.textContent = '⚠ EmailJS not configured yet — add your keys at the top of the file.';
-    err.style.display = 'block'; return;
-  }
-  btn.disabled = true; btn.textContent = 'Sending…';
-  const p = {
-    from_name:  document.getElementById('fn').value.trim(),
-    from_email: document.getElementById('fe').value.trim(),
-    subject:    document.getElementById('fs').value.trim() || '(No subject)',
-    message:    document.getElementById('fm').value.trim(),
+  const btn = document.getElementById("cfbtn");
+  const ok  = document.getElementById("cfok");
+  const err = document.getElementById("cferr");
+
+  btn.disabled = true;
+  btn.textContent = "Sending...";
+
+  const params = {
+    from_name:  document.getElementById("fn").value.trim(),
+    from_email: document.getElementById("fe").value.trim(),
+    subject:    document.getElementById("fs").value.trim() || "(No subject)",
+    message:    document.getElementById("fm").value.trim()
   };
-  emailjs.send('service_8amvumb', 'template_dqerek4', p)
-    .then(() => { btn.style.display='none'; ok.style.display='block'; this.reset(); })
-    .catch(() => { err.textContent='✗ Failed — please email me directly.'; err.style.display='block'; btn.disabled=false; btn.textContent='→ Send Message'; });
+
+  emailjs.send("service_8amvumb", "template_dqerek4", params)
+    .then(() => {
+      btn.style.display = "none";
+      ok.style.display  = "block";
+      err.style.display = "none";
+      document.getElementById("cf").reset();
+    })
+    .catch(() => {
+      err.textContent = "✗ Failed — please email directly.";
+      err.style.display = "block";
+      btn.disabled = false;
+      btn.textContent = "→ Send Message";
+    });
 });
 </script>
-</body>
-</html>
