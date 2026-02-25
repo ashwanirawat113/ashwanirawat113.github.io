@@ -338,24 +338,94 @@ footer {
 
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 768px) {
+
+  /* ===== NAV ===== */
   nav { padding: 1rem 1.5rem; }
+
   .nav-links { display: none; }
+
   .hbg { display: flex; }
+
   .nav-links.open {
-    display: flex; flex-direction: column;
-    position: fixed; top: 57px; left: 0; right: 0;
-    background: rgba(8,8,8,.98); padding: 2rem 1.5rem; gap: 1.5rem;
-    border-bottom: 1px solid var(--border); z-index: 49;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 57px;
+    left: 0;
+    right: 0;
+    background: rgba(8,8,8,.98);
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    z-index: 49;
   }
-  #hero { padding: 7rem 1.5rem 4rem; }
-  .hero-stats { display: none; }
-  .scroll-hint { left: 1.5rem; }
+
+  /* ===== HERO MOBILE FIX ===== */
+
+  #hero {
+    padding: 6rem 1.5rem 4rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-tag {
+    justify-content: center;
+  }
+
+  .hero-name {
+    font-size: 2.6rem;
+    line-height: 1.05;
+    word-break: break-word;
+  }
+
+  .hero-name .outline {
+    -webkit-text-stroke: 1px rgba(255,255,255,.3);
+  }
+
+  .hero-desc {
+    margin: 1.5rem auto 2rem;
+    max-width: 100%;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    display: none;
+  }
+
+  .scroll-hint {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* ===== GENERAL MOBILE LAYOUT ===== */
+
   .wrap { padding: 4rem 1.5rem; }
+
   .divider { margin: 0 1.5rem; }
-  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .fg-row { grid-template-columns: 1fr; }
-  footer { flex-direction: column; gap: .5rem; padding: 1.4rem; text-align: center; }
+
+  .about-grid { 
+    grid-template-columns: 1fr; 
+    gap: 2.5rem; 
+  }
+
+  .contact-grid { 
+    grid-template-columns: 1fr; 
+    gap: 2.5rem; 
+  }
+
+  .fg-row { 
+    grid-template-columns: 1fr; 
+  }
+
+  footer { 
+    flex-direction: column; 
+    gap: .5rem; 
+    padding: 1.4rem; 
+    text-align: center; 
+  }
 }
 /* ===================== PRELOADER ===================== */
 #preloader {
