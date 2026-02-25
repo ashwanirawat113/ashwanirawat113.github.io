@@ -357,9 +357,78 @@ footer {
   .fg-row { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: .5rem; padding: 1.4rem; text-align: center; }
 }
+/* ===================== PRELOADER ===================== */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.loader-content {
+  text-align: center;
+}
+
+.loader-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.loader-name span {
+  display: inline-block;
+  transform: translateY(100%);
+  animation: slideUp 0.8s ease forwards;
+}
+
+.loader-name span.accent {
+  color: var(--accent);
+  animation-delay: 0.2s;
+}
+
+@keyframes slideUp {
+  to { transform: translateY(0); }
+}
+
+.loader-bar {
+  width: 200px;
+  height: 3px;
+  background: var(--muted2);
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.loader-progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  animation: loadBar 1.5s ease forwards;
+}
+
+@keyframes loadBar {
+  to { width: 100%; }
+}
 </style>
 </head>
 <body>
+  <div id="preloader">
+  <div class="loader-content">
+    <div class="loader-name">
+      <span>Ashwani</span>
+      <span class="accent">Rawat</span>
+    </div>
+    <div class="loader-bar">
+      <div class="loader-progress"></div>
+    </div>
+  </div>
+</div>
 
 <!-- NAV -->
 <nav>
@@ -745,5 +814,14 @@ document.getElementById("cf").addEventListener("submit", function(e) {
       btn.disabled = false;
       btn.textContent = "→ Send Message";
     });
+});
+// ================= PRELOADER =================
+window.addEventListener("load", function() {
+  const preloader = document.getElementById("preloader");
+
+  setTimeout(() => {
+    preloader.style.opacity = "0";
+    preloader.style.visibility = "hidden";
+  }, 1600);
 });
 </script>
