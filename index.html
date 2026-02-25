@@ -706,13 +706,14 @@ nl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
 }));
 
 // Contact form
+emailjs.init('abc123XYZdef');
 document.getElementById('cf').addEventListener('submit', function(e) {
   e.preventDefault();
   const btn = document.getElementById('cfbtn');
   const ok  = document.getElementById('cfok');
   const err = document.getElementById('cferr');
-  const PK  = 'YOUR_PUBLIC_KEY';
-  if (PK === 'YOUR_PUBLIC_KEY') {
+  const PK  = 'xrlxgM5LRiRDlJKrT';
+  if (PK === 'xrlxgM5LRiRDlJKrT') {
     err.textContent = '⚠ EmailJS not configured yet — add your keys at the top of the file.';
     err.style.display = 'block'; return;
   }
@@ -723,7 +724,7 @@ document.getElementById('cf').addEventListener('submit', function(e) {
     subject:    document.getElementById('fs').value.trim() || '(No subject)',
     message:    document.getElementById('fm').value.trim(),
   };
-  emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', p)
+  emailjs.send('service_8amvumb', 'template_dqerek4', p)
     .then(() => { btn.style.display='none'; ok.style.display='block'; this.reset(); })
     .catch(() => { err.textContent='✗ Failed — please email me directly.'; err.style.display='block'; btn.disabled=false; btn.textContent='→ Send Message'; });
 });
