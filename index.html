@@ -706,9 +706,14 @@ nl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
 }));
 
 // Contact form
-emailjs.init('abc123XYZdef');
-document.getElementById('cf').addEventListener('submit', function(e) {
-  e.preventDefault();
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  emailjs.init('abc123XYZdef');
+
+  document.getElementById('cf').addEventListener('submit', function(e) {
+    e.preventDefault();
+
   const btn = document.getElementById('cfbtn');
   const ok  = document.getElementById('cfok');
   const err = document.getElementById('cferr');
