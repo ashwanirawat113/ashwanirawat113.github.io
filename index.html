@@ -337,9 +337,64 @@ footer {
 .ft-top:hover { color: var(--accent); }
 
 /* ===================== RESPONSIVE ===================== */
+/* ===== HERO LAYOUT WITH PHOTO ===== */
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== PREMIUM PHOTO STYLE ===== */
+
+.hero-photo {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  position: relative;
+  animation: floatY 6s ease-in-out infinite;
+}
+
+.hero-photo::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,255,136,.15), transparent 70%);
+  filter: blur(30px);
+  z-index: -1;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--bg);
+}
+
+/* Floating animation */
+@keyframes floatY {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0px); }
+}
 @media (max-width: 768px) {
 
-  /* ===== NAV ===== */
   nav { padding: 1rem 1.5rem; }
 
   .nav-links { display: none; }
@@ -360,7 +415,7 @@ footer {
     z-index: 49;
   }
 
-  /* ===== HERO MOBILE FIX ===== */
+  /* HERO MOBILE FIX */
 
   #hero {
     padding: 6rem 1.5rem 4rem;
@@ -368,12 +423,23 @@ footer {
     align-items: center;
   }
 
+  .hero-inner {
+    flex-direction: column;
+  }
+
+  .hero-photo {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 1.5rem;
+    animation: none; /* stop floating on mobile */
+  }
+
   .hero-tag {
     justify-content: center;
   }
 
   .hero-name {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     line-height: 1.05;
     word-break: break-word;
   }
@@ -400,31 +466,21 @@ footer {
     transform: translateX(-50%);
   }
 
-  /* ===== GENERAL MOBILE LAYOUT ===== */
-
   .wrap { padding: 4rem 1.5rem; }
 
   .divider { margin: 0 1.5rem; }
 
-  .about-grid { 
-    grid-template-columns: 1fr; 
-    gap: 2.5rem; 
-  }
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
 
-  .contact-grid { 
-    grid-template-columns: 1fr; 
-    gap: 2.5rem; 
-  }
+  .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
 
-  .fg-row { 
-    grid-template-columns: 1fr; 
-  }
+  .fg-row { grid-template-columns: 1fr; }
 
-  footer { 
-    flex-direction: column; 
-    gap: .5rem; 
-    padding: 1.4rem; 
-    text-align: center; 
+  footer {
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1.4rem;
+    text-align: center;
   }
 }
 /* ===================== PRELOADER ===================== */
@@ -517,28 +573,49 @@ footer {
 
 <!-- ══════════ HERO ══════════ -->
 <section id="hero">
-  <div class="hero-tag"><div class="dot"></div>Final Year Student — ECE (Data Science)</div>
-  <h1 class="hero-name">
-    Ashwani<br>
-    <span class="outline">Ra<span class="green">wat</span></span>
-  </h1>
-  <p class="hero-desc">
-    Final-year ECE (Data Science) engineer at SRM IST Chennai. I build ML systems, optimize algorithms, and develop full-stack applications — bridging data intelligence with real-world engineering.
-  </p>
-  <div class="hero-btns">
-    <a href="#projects" class="btn-solid">→ View Projects</a>
-    <a href="#contact" class="btn-ghost">Get In Touch</a>
-  <a href="assets/resume.pdf" target="_blank" class="btn-ghost">↓ Resume</a>  
+  <div class="hero-inner">
+
+    <div class="hero-left">
+      <div class="hero-tag">
+        <div class="dot"></div>
+        Final Year Student — ECE (Data Science)
+      </div>
+
+      <h1 class="hero-name">
+        Ashwani<br>
+        <span class="outline">Ra<span class="green">wat</span></span>
+      </h1>
+
+      <p class="hero-desc">
+        Final-year ECE (Data Science) engineer at SRM IST Chennai. I build ML systems, optimize algorithms, and develop full-stack applications — bridging data intelligence with real-world engineering.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn-solid">→ View Projects</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+        <a href="assets/resume_ashwani_rawat.pdf" target="_blank" class="btn-ghost">↓ Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-photo">
+        <img src="assets/images/profile.jpg" alt="Ashwani Rawat">
+      </div>
+    </div>
+
   </div>
+
   <div class="hero-stats">
     <div><div class="stat-val">7<span>+</span></div><div class="stat-lbl">Projects Built</div></div>
     <div><div class="stat-val">4<span>+</span></div><div class="stat-lbl">Certifications</div></div>
     <div><div class="stat-val">96<span>%</span></div><div class="stat-lbl">Best ML Accuracy</div></div>
   </div>
-  <div class="scroll-hint"><div class="scroll-line"></div>Scroll to explore</div>
-</section>
 
-<div class="divider"></div>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    Scroll to explore
+  </div>
+</section>
 
 <!-- ══════════ ABOUT ══════════ -->
 <section id="about">
