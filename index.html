@@ -109,25 +109,27 @@ section { position: relative; z-index: 1; }
   animation: blink 2s infinite;
 }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
-
 .hero-name {
   font-size: clamp(3rem, 9vw, 7rem);
-  font-weight: 900; line-height: .95;
-  letter-spacing: -.03em; color: var(--white);
+  font-weight: 900;
+  line-height: .95;
+  letter-spacing: -.03em;
+  color: var(--white);
   margin-bottom: 1.5rem;
 }
-.hero-name {
-  perspective: 1000px;
+
+.hero-name .first {
+  display: block;
+  color: var(--white);
 }
 
-.hero-name .green { color: var(--accent); -webkit-text-stroke: 0; }
-
-.hero-desc {
-  max-width: 520px; font-size: 1rem;
-  line-height: 1.8; color: var(--muted);
-  margin-bottom: 2.5rem;
+.hero-name .last {
+  display: block;
 }
 
+.hero-name .last span {
+  color: var(--accent);
+}
 .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
 .btn-solid {
   display: inline-flex; align-items: center; gap: .5rem;
@@ -423,8 +425,7 @@ footer {
 /* ================= HERO MASTER ANIMATION ================= */
 
 #hero {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
 }
 
 #hero.animate {
@@ -440,45 +441,22 @@ footer {
 
 /* Staggered content */
 
+/* ===== SAFE HERO ANIMATION ===== */
+
 .hero-tag,
 .hero-name,
 .hero-desc,
-.hero-btns {
+.hero-btns,
+.hero-photo {
   opacity: 0;
   transform: translateY(25px);
 }
 
-#hero.animate .hero-tag {
-  animation: fadeUp 0.8s ease forwards;
-  animation-delay: 0.2s;
-}
-
-#hero.animate .hero-name {
-  animation: fadeUp 0.8s ease forwards;
-  animation-delay: 0.4s;
-}
-
-#hero.animate .hero-desc {
-  animation: fadeUp 0.8s ease forwards;
-  animation-delay: 0.6s;
-}
-
-#hero.animate .hero-btns {
-  animation: fadeUp 0.8s ease forwards;
-  animation-delay: 0.8s;
-}
-
-/* Profile image animation */
-
-.hero-photo {
-  opacity: 0;
-  transform: scale(0.85);
-}
-
-#hero.animate .hero-photo {
-  animation: imagePop 1s cubic-bezier(.22,1,.36,1) forwards;
-  animation-delay: 0.9s;
-}
+.hero-tag { animation: fadeUp 0.8s ease forwards; animation-delay: 0.2s; }
+.hero-name { animation: fadeUp 0.8s ease forwards; animation-delay: 0.4s; }
+.hero-desc { animation: fadeUp 0.8s ease forwards; animation-delay: 0.6s; }
+.hero-btns { animation: fadeUp 0.8s ease forwards; animation-delay: 0.8s; }
+.hero-photo { animation: fadeUp 0.8s ease forwards; animation-delay: 1s; }
 
 @keyframes fadeUp {
   to {
@@ -486,21 +464,6 @@ footer {
     transform: translateY(0);
   }
 }
-
-@keyframes imagePop {
-  0% {
-    opacity: 0;
-    transform: scale(0.85);
-  }
-  70% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
   /* ===== HERO MOBILE ===== */
 
   #hero {
@@ -603,9 +566,14 @@ footer {
         Final Year Student — ECE (Data Science)
       </div>
 
-      <h1 class="hero-name">
+   <h1 class="hero-name">
   <span class="first">Ashwani</span>
-  <span class="last">Rawat</span>
+  <span class="last">
+    <span style="-webkit-text-stroke: 2px rgba(255,255,255,.25); color: transparent;">
+      Raw
+    </span>
+    <span style="color: var(--accent);">at</span>
+  </span>
 </h1>
 
       <p class="hero-desc">
@@ -948,13 +916,6 @@ nl.querySelectorAll('a').forEach(a =>
     nl.classList.remove('open');
   })
 );
-document.addEventListener("DOMContentLoaded", function () {
-  const hero = document.getElementById("hero");
-
-  if (hero) {
-    hero.classList.add("animate");
-  }
-});
 // ================= EMAILJS INIT =================
 emailjs.init("xrlxgM5LRiRDlJKrT");
 
