@@ -570,7 +570,13 @@ footer {
     padding: 1.4rem;
     text-align: center;
   }
+/* ===== Magnetic Button Effect ===== */
 
+.magnetic {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
 </style>
 <!-- NAV -->
 <nav>
@@ -607,9 +613,9 @@ footer {
       </p>
 
       <div class="hero-btns">
-        <a href="#projects" class="btn-solid">→ View Projects</a>
-        <a href="#contact" class="btn-ghost">Get In Touch</a>
-        <a href="/assets/resume.pdf" download class="btn-ghost"> ↓ Resume </a>
+        <a href="#projects" class="btn-solid magnetic">→ View Projects</a>
+        <a href="#contact" class="btn-ghost magnetic">Get In Touch</a>
+        <a href="/assets/resume.pdf" download class="btn-ghost magnetic">↓ Resume</a>
       </div>
     </div>
 
@@ -980,6 +986,26 @@ document.getElementById("cf").addEventListener("submit", function(e) {
       btn.disabled = false;
       btn.textContent = "→ Send Message";
     });
+});
+/* ===== Magnetic Hover ===== */
+
+const magneticButtons = document.querySelectorAll(".magnetic");
+
+magneticButtons.forEach(btn => {
+  btn.addEventListener("mousemove", function(e) {
+    const rect = btn.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const moveX = (x - rect.width / 2) * 0.25;
+    const moveY = (y - rect.height / 2) * 0.25;
+
+    btn.style.transform = `translate(${moveX}px, ${moveY}px)`;
+  });
+
+  btn.addEventListener("mouseleave", function() {
+    btn.style.transform = "translate(0, 0)";
+  });
 });
 </script>
 </body>
