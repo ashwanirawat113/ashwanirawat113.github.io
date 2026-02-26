@@ -419,7 +419,30 @@ footer {
     border-bottom: 1px solid var(--border);
     z-index: 49;
   }
+}
 
+/* ===== Sequential Hero Name Animation ===== */
+
+.hero-name span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.hero-name.animate .first {
+  animation: nameReveal 0.9s cubic-bezier(.22,1,.36,1) forwards;
+}
+
+.hero-name.animate .last {
+  animation: nameReveal 0.9s cubic-bezier(.22,1,.36,1) forwards;
+  animation-delay: 0.35s;
+}
+
+@keyframes nameReveal {
+  0% { opacity: 0; transform: translateY(40px); }
+  60% { opacity: 1; transform: translateY(-6px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
   /* ===== HERO MOBILE ===== */
 
   #hero {
@@ -520,94 +543,7 @@ footer {
     text-align: center;
   }
 }
-/* ===================== PRELOADER ===================== */
-#preloader {
-  position: fixed;
-  inset: 0;
-  background: var(--bg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
-}
-
-.loader-content {
-  text-align: center;
-}
-
-.loader-name {
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--white);
-  margin-bottom: 1.5rem;
-  overflow: hidden;
-}
-
-.loader-name span {
-  display: inline-block;
-  transform: translateY(100%);
-  animation: slideUp 0.8s ease forwards;
-}
-
-.loader-name span.accent {
-  color: var(--accent);
-  animation-delay: 0.2s;
-}
-
-@keyframes slideUp {
-  to { transform: translateY(0); }
-}
-
-.loader-bar {
-  width: 200px;
-  height: 3px;
-  background: var(--muted2);
-  overflow: hidden;
-  border-radius: 2px;
-}
-
-.loader-progress {
-  height: 100%;
-  width: 0%;
-  background: linear-gradient(90deg, var(--accent), var(--accent2));
-  animation: loadBar 1.5s ease forwards;
-}
-
-@keyframes loadBar {
-  to { width: 100%; }
-}
-
-@keyframes flipReveal {
-  0% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  60% {
-    transform: rotateX(15deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-}
 </style>
-</head>
-<body>
-  <div id="preloader">
-  <div class="loader-content">
-    <div class="loader-name">
-      <span>Ashwani</span>
-      <span class="accent">Rawat</span>
-    </div>
-    <div class="loader-bar">
-      <div class="loader-progress"></div>
-    </div>
-  </div>
-</div>
-
 <!-- NAV -->
 <nav>
   <div class="logo">Ashwani Rawat</div>
@@ -634,8 +570,8 @@ footer {
       </div>
 
       <h1 class="hero-name">
-        Ashwani<br>
-        <span class="outline">Ra<span class="green">wat</span></span>
+        <span class="first">Ashwani</span>
+        <span class="last">Rawat</span>
       </h1>
 
       <p class="hero-desc">
@@ -1014,13 +950,5 @@ document.getElementById("cf").addEventListener("submit", function(e) {
       btn.textContent = "→ Send Message";
     });
 });
-// ================= PRELOADER =================
-window.addEventListener("load", function() {
-  const preloader = document.getElementById("preloader");
-
-  setTimeout(() => {
-    preloader.style.opacity = "0";
-    preloader.style.visibility = "hidden";
-  }, 1600);
-});
 </script>
+</body>
