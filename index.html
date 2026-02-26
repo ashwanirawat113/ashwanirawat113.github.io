@@ -423,6 +423,8 @@ footer {
 
 /* ===== Sequential Hero Name Animation ===== */
 
+/* ===== HERO NAME ANIMATION ===== */
+
 .hero-name span {
   display: inline-block;
   opacity: 0;
@@ -430,18 +432,23 @@ footer {
 }
 
 .hero-name.animate .first {
-  animation: nameReveal 0.9s cubic-bezier(.22,1,.36,1) forwards;
+  animation: revealUp 0.8s ease forwards;
 }
 
 .hero-name.animate .last {
-  animation: nameReveal 0.9s cubic-bezier(.22,1,.36,1) forwards;
-  animation-delay: 0.35s;
+  animation: revealUp 0.8s ease forwards;
+  animation-delay: 0.3s;
 }
 
-@keyframes nameReveal {
-  0% { opacity: 0; transform: translateY(40px); }
-  60% { opacity: 1; transform: translateY(-6px); }
-  100% { opacity: 1; transform: translateY(0); }
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
   /* ===== HERO MOBILE ===== */
 
@@ -542,7 +549,7 @@ footer {
     padding: 1.4rem;
     text-align: center;
   }
-}
+
 </style>
 <!-- NAV -->
 <nav>
@@ -570,9 +577,9 @@ footer {
       </div>
 
       <h1 class="hero-name">
-        <span class="first">Ashwani</span>
-        <span class="last">Rawat</span>
-      </h1>
+  <span class="first">Ashwani</span>
+  <span class="last">Rawat</span>
+</h1>
 
       <p class="hero-desc">
         Final-year ECE (Data Science) engineer at SRM IST Chennai. I build ML systems, optimize algorithms, and develop full-stack applications — bridging data intelligence with real-world engineering.
@@ -581,7 +588,7 @@ footer {
       <div class="hero-btns">
         <a href="#projects" class="btn-solid">→ View Projects</a>
         <a href="#contact" class="btn-ghost">Get In Touch</a>
-        <a href="assets/resume_ashwani_rawat.pdf" target="_blank" class="btn-ghost">↓ Resume</a>
+        <a href="/assets/resume.pdf" download class="btn-ghost"> ↓ Resume </a>
       </div>
     </div>
 
@@ -914,7 +921,10 @@ nl.querySelectorAll('a').forEach(a =>
     nl.classList.remove('open');
   })
 );
-
+document.addEventListener("DOMContentLoaded", function () {
+  const heroName = document.querySelector(".hero-name");
+  heroName.classList.add("animate");
+});
 // ================= EMAILJS INIT =================
 emailjs.init("xrlxgM5LRiRDlJKrT");
 
