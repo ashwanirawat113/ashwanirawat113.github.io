@@ -120,19 +120,6 @@ section { position: relative; z-index: 1; }
   perspective: 1000px;
 }
 
-.hero-name .outline {
-  display: inline-block;
-  color: transparent;
-  -webkit-text-stroke: 2px rgba(255,255,255,.35);
-
-  transform-origin: top center;
-  transform-style: preserve-3d;
-
-  animation: flipReveal 0.8s cubic-bezier(.22,1,.36,1) forwards;
-  animation-delay: 0.4s;
-
-  backface-visibility: hidden;
-}
 .hero-name .green { color: var(--accent); -webkit-text-stroke: 0; }
 
 .hero-desc {
@@ -452,18 +439,35 @@ footer {
     margin-bottom: 1rem;
   }
 
-  /* Subtle flip animation (calendar style) */
-  .hero-name .outline {
-    display: inline-block;
-    -webkit-text-stroke: 1px rgba(255,255,255,.25);
-    transform-origin: top center;
-    transform: rotateX(-90deg);
-    opacity: 0;
-    animation: flipReveal 0.8s cubic-bezier(.22,1,.36,1) forwards;
-    animation-delay: 0.4s;
-    backface-visibility: hidden;
-  }
+/* ===== CLEAN CROSS-BROWSER NAME ANIMATION ===== */
 
+.hero-name .outline {
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255,255,255,.35);
+
+  opacity: 0;
+  transform: translateY(-25px) scaleY(0.8);
+  transform-origin: top center;
+
+  animation: nameReveal 0.8s cubic-bezier(.22,1,.36,1) forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes nameReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px) scaleY(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(6px) scaleY(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
   .hero-desc {
     margin: 1.5rem auto 2rem;
     max-width: 92%;
