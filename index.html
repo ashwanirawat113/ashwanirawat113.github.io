@@ -54,7 +54,7 @@ body::after{
 .marquee-bar{overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(0,255,136,.03);padding:.5rem 0;position:relative;z-index:2}
 .marquee-track{display:flex;gap:0;animation:marquee 30s linear infinite;width:max-content}
 .marquee-track:hover{animation-play-state:paused}
-.m-item{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);padding:0 2.5rem;white-space:nowrap;display:flex;align-items:center;gap:.7rem}
+.m-item{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);padding:0 2.5rem;white-space:nowrap;display:flex;align-items: center;gap:.7rem}
 .m-dot{width:3px;height:3px;border-radius:50%;background:var(--accent);flex-shrink:0}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
@@ -419,7 +419,7 @@ footer::before{content:'';position:absolute;top:0;left:10%;right:10%;height:1px;
     <div class="hero-left">
       <div class="hero-tag">
         <div class="dot"></div>
-        Final Year Student — ECE (Data Science)
+        Intelligent Systems Engineer • AI, Data & Electronics
       </div>
 
       <h1 class="hero-name" id="heroName" aria-label="Ashwani Rawat">
@@ -427,7 +427,7 @@ footer::before{content:'';position:absolute;top:0;left:10%;right:10%;height:1px;
       </h1>
 
       <p class="hero-desc">
-        Final-year ECE (Data Science) engineer at SRM IST Chennai. I build ML systems, optimize algorithms, and develop full-stack applications — bridging data intelligence with real-world engineering.
+        ECE graduate specializing in AI, machine learning, and intelligent system design — building data-driven solutions that bridge electronics, software, and real-world engineering.
       </p>
 
       <div class="hero-btns">
@@ -472,24 +472,82 @@ footer::before{content:'';position:absolute;top:0;left:10%;right:10%;height:1px;
 <!-- ══════════ ABOUT ══════════ -->
 <section id="about">
   <div class="wrap">
-    <div class="sec-eyebrow"><span class="sec-eyebrow-line"></span>About</div>
-    <h2 class="sec-title">Engineer.<br><span class="dim">Data Thinker.</span></h2>
+    <div class="sec-eyebrow">
+      <span class="sec-eyebrow-line"></span>About
+    </div>
+
+    <h2 class="sec-title">
+      Engineer.<br><span class="dim">Systems Thinker.</span>
+    </h2>
+
     <div class="about-grid">
+
+      <!-- LEFT SIDE -->
       <div class="about-text">
-        <p>Hi, I'm <strong>Ashwani Rawat</strong> — a final-year <span class="hl">Electronics and Communication Engineering</span> student specialising in Data Science at SRM Institute of Science and Technology, Chennai.</p>
-        <p>I have strong foundations in Data Structures, Algorithms, and OOP, with hands-on experience developing <strong>optimization algorithms</strong>, scalable ML systems, and full-stack applications using Python and Java.</p>
-        <p>Currently seeking <span class="hl">full-time roles or internships</span> in ML engineering, data science, or embedded systems — available for immediate joining.</p>
+
+        <p>
+          Hi, I'm <strong>Ashwani Rawat</strong> — an
+          <span class="hl">Intelligent Systems Engineer</span>
+          focused on building systems that sit between AI, data, and engineering.
+        </p>
+
+        <p>
+          My work ranges from multimodal deep learning and healthcare AI to optimization algorithms, embedded system experimentation, and scalable AI pipelines. I enjoy solving problems that require both analytical depth and practical engineering thinking — where system design, experimentation, and real-world constraints matter as much as the final output.
+        </p>
+
+        <p>
+          I’m particularly interested in intelligent systems, applied AI, and engineering-driven innovation across data-centric and interdisciplinary domains.
+        </p>
+
       </div>
+
+      <!-- RIGHT SIDE -->
       <div class="info-table">
-        <div class="info-row"><span class="ik">Status</span><span class="iv"><span class="badge">Open to Opportunities</span></span></div>
-        <div class="info-row"><span class="ik">Degree</span><span class="iv">B.Tech ECE (Data Science)</span></div>
-        <div class="info-row"><span class="ik">University</span><span class="iv">SRM IST, Chennai</span></div>
-        <div class="info-row"><span class="ik">Graduation</span><span class="iv">2026</span></div>
-        <div class="info-row"><span class="ik">CGPA</span><span class="iv">7.19</span></div>
-        <div class="info-row"><span class="ik">Location</span><span class="iv">Chennai, Tamil Nadu</span></div>
-        <div class="info-row"><span class="ik">Availability</span><span class="iv">Immediate · PAN India WFO</span></div>
-        <div class="info-row"><span class="ik">Interests</span><span class="iv">Deep Learning · Edge AI · MLOps</span></div>
+
+        <div class="info-row">
+          <span class="ik">Status</span>
+          <span class="iv">
+            <span class="badge">OPEN TO FULL-TIME OPPORTUNITIES</span>
+          </span>
+        </div>
+
+        <div class="info-row">
+          <span class="ik">Degree</span>
+          <span class="iv">B.Tech ECE (Data Science)</span>
+        </div>
+
+        <div class="info-row">
+          <span class="ik">University</span>
+          <span class="iv">SRM IST, Chennai</span>
+        </div>
+
+        <div class="info-row">
+          <span class="ik">Graduation</span>
+          <span class="iv">2026</span>
+        </div>
+
+        <div class="info-row">
+          <span class="ik">CGPA</span>
+          <span class="iv">7.43</span>
+        </div>
+
+        <div class="info-row">
+          <span class="ik">Location</span>
+          <span class="iv">Chennai, Tamil Nadu</span>
+        </div>
+
+        <div class="info-row">
+          <span class="ik">Availability</span>
+          <span class="iv">Immediate · PAN India WFO</span>
+        </div>
+
+        <div class="info-row">
+          <span class="ik">Interests</span>
+          <span class="iv">Deep Learning · Edge AI · MLOps</span>
+        </div>
+
       </div>
+
     </div>
   </div>
 </section>
@@ -582,304 +640,596 @@ footer::before{content:'';position:absolute;top:0;left:10%;right:10%;height:1px;
     <h2 class="sec-title">Featured<br><span class="dim">Projects</span></h2>
     <div class="proj-grid">
 
-      <div class="proj-card">
-        <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 30% 50%,rgba(0,255,136,.18),transparent 70%)"></div><div class="proj-num">01</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 8v8M8 12h8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg></div></div>
-        <div class="proj-body">
-          <div class="proj-tags"><span class="tag">TensorFlow</span><span class="tag">EfficientNetB0</span><span class="tag">Multimodal</span><span class="tag">Grad-CAM</span></div>
-          <div class="proj-title">Multimodal Deep Learning for Lung Cancer Classification</div>
-          <div class="proj-desc">Integrated 3818 CT scans (TCIA) with clinical data for 3-class lung cancer classification. Achieved <strong style="color:var(--accent)">96.86% accuracy, 96.75% F1-score, 0.996 ROC-AUC</strong>.</div>
-          <div class="proj-footer">
-            <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
-            <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
-          </div>
-        </div>
-        <div class="proj-detail">
-          <h4>Project Overview</h4>
-          <p>A multimodal deep learning pipeline fusing CT scan imaging with structured clinical metadata for accurate 3-class lung cancer classification (Adenocarcinoma, Squamous Cell, Small Cell).</p>
-          <ul>
-            <li>Dataset: 3818 CT scans from TCIA combined with clinical features</li>
-            <li>Architecture: EfficientNetB0 + DenseNet121 ensemble with clinical feature fusion</li>
-            <li>Explainability: Grad-CAM heatmaps for tumor region localization</li>
-            <li>Handled class imbalance using SMOTE + stratified 5-fold cross-validation</li>
-            <li>Results: 96.86% accuracy, 96.75% F1-Score, 0.996 ROC-AUC</li>
-          </ul>
-          <div class="tech-used">
-            <span class="tech-chip">TensorFlow/Keras</span><span class="tech-chip">EfficientNetB0</span><span class="tech-chip">DenseNet121</span><span class="tech-chip">Grad-CAM</span><span class="tech-chip">SMOTE</span><span class="tech-chip">Python</span>
-          </div>
-        </div>
+     <div class="proj-card">
+  <div class="proj-thumb">
+    <div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 30% 50%,rgba(0,255,136,.18),transparent 70%)"></div>
+
+    <div class="proj-num">01</div>
+
+    <div class="proj-icon">
+      <svg width="32" height="32" viewBox="0 0 24 24"
+           fill="none"
+           stroke="var(--accent)"
+           stroke-width="1.5"
+           stroke-linecap="round"
+           stroke-linejoin="round">
+
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+        <path d="M12 8v8M8 12h8"/>
+        <circle cx="12" cy="12" r="3"/>
+        <path d="M12 2v2M12 20v2M2 12h2M20 12h2"/>
+
+      </svg>
+    </div>
+  </div>
+
+  <div class="proj-body">
+
+    <div class="proj-tags">
+      <span class="tag">TensorFlow</span>
+      <span class="tag">EfficientNetB0</span>
+      <span class="tag">Multimodal AI</span>
+      <span class="tag">Healthcare AI</span>
+      <span class="tag">Grad-CAM</span>
+    </div>
+
+    <div class="proj-title">
+      Multimodal Deep Learning for Lung Cancer Classification & Precision Diagnosis
+    </div>
+
+    <div class="proj-desc">
+  Developed a multimodal deep learning framework integrating CT imaging
+  and clinical data for precision lung cancer classification, achieving
+  <strong style="color:var(--accent)">95.94% accuracy with improved diagnostic reliability</strong>
+  using EfficientNetB0, feature fusion, and explainable AI techniques.
+</div>
+
+    <div class="proj-footer">
+
+      <a href="https://github.com/ashwanirawat113"
+         target="_blank"
+         class="proj-link">
+         ↗ GitHub
+      </a>
+
+      <button class="proj-toggle"
+              onclick="toggleDetail(this)">
+              + Details
+      </button>
+
+    </div>
+  </div>
+
+  <div class="proj-detail">
+
+    <h4>Project Overview</h4>
+
+    <p>
+      Engineered a multimodal healthcare AI system for lung cancer
+      classification by integrating CT imaging features with structured
+      clinical data to improve diagnostic reliability and precision
+      treatment support.
+    </p>
+
+    <ul>
+
+      <li>Integrated 3818 TCIA CT scans with patient clinical attributes including age, smoking history, gender, and tumor stage</li>
+
+      <li>Implemented EfficientNetB0-based transfer learning pipeline for deep tumor feature extraction from CT imaging data</li>
+
+      <li>Designed a clinical neural network for structured patient-data representation learning</li>
+
+      <li>Developed multimodal feature-fusion architecture combining imaging and clinical embeddings into a unified diagnostic representation</li>
+
+      <li>Applied Grad-CAM explainability techniques for tumor-region visualization and model interpretability</li>
+
+      <li>Handled class imbalance using SMOTE and stratified cross-validation to improve generalization robustness</li>
+
+      <li>Achieved <strong style="color:var(--accent)">95.94% classification accuracy</strong> with improved precision, recall, and reduced misclassification versus single-modality systems</li>
+
+      <li>Focused on precision healthcare AI, reliable medical inference, and clinically relevant intelligent system design</li>
+
+    </ul>
+
+    <div class="tech-used">
+
+      <span class="tech-chip">TensorFlow/Keras</span>
+      <span class="tech-chip">EfficientNetB0</span>
+      <span class="tech-chip">Multimodal AI</span>
+      <span class="tech-chip">Grad-CAM</span>
+      <span class="tech-chip">Feature Fusion</span>
+      <span class="tech-chip">Healthcare AI</span>
+      <span class="tech-chip">Transfer Learning</span>
+      <span class="tech-chip">Python</span>
+
+    </div>
+  </div>
+</div>
+
+  <div class="proj-card">
+    <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 70% 50%,rgba(0,200,255,.15),transparent 70%)"></div><div class="proj-num">02</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h6l-3 6h-3"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div></div>
+    <div class="proj-body">
+      <div class="proj-tags"><span class="tag">Python</span><span class="tag">Genetic Algorithm</span><span class="tag">Metaheuristics</span></div>
+      <div class="proj-title">Genetic Algorithm for Vehicle Routing Optimization</div>
+      <div class="proj-desc">Solved the NP-hard VRP using custom chromosome encoding, selection, crossover and mutation operators with constraint-aware fitness evaluation.</div>
+      <div class="proj-footer">
+        <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
+        <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
+      </div>
+    </div>
+    <div class="proj-detail">
+      <h4>Project Overview</h4>
+      <p>Implemented a Genetic Algorithm to solve the Vehicle Routing Problem (VRP), an NP-hard combinatorial optimization challenge central to logistics and supply chain management.</p>
+      <ul>
+        <li>Custom chromosome encoding representing delivery route permutations</li>
+        <li>Tournament selection, order crossover (OX), and swap mutation operators</li>
+        <li>Constraint-aware fitness function penalizing capacity violations</li>
+        <li>Benchmarked multiple runs for convergence stability analysis</li>
+        <li>Achieved significant route distance reduction vs. greedy baseline</li>
+      </ul>
+      <div class="tech-used">
+        <span class="tech-chip">Python</span><span class="tech-chip">NumPy</span><span class="tech-chip">Matplotlib</span><span class="tech-chip">Metaheuristics</span><span class="tech-chip">Optimization</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 50% 30%,rgba(255,180,0,.12),transparent 70%)"></div><div class="proj-num">03</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div></div>
+    <div class="proj-body">
+      <div class="proj-tags"><span class="tag">React.js</span><span class="tag">Flask</span><span class="tag">REST API</span><span class="tag">MySQL</span></div>
+      <div class="proj-title">AI-Powered Invoice Automation System</div>
+      <div class="proj-desc">Full-stack app for invoice processing and workflow automation. Modular OOP backend with RESTful APIs and structured MySQL schema. React.js frontend with Flask backend.</div>
+      <div class="proj-footer">
+        <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
+        <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
+      </div>
+    </div>
+    <div class="proj-detail">
+      <h4>Project Overview</h4>
+      <p>A full-stack invoice processing and management system with AI-assisted data extraction and automated workflow routing capabilities.</p>
+      <ul>
+        <li>React.js frontend with dynamic form handling and dashboard views</li>
+        <li>Flask RESTful backend with modular OOP architecture</li>
+        <li>MySQL schema designed for invoice lifecycle management</li>
+        <li>Automated approval routing and status tracking pipeline</li>
+        <li>AI-assisted field extraction from invoice documents</li>
+      </ul>
+      <div class="tech-used">
+        <span class="tech-chip">React.js</span><span class="tech-chip">Flask</span><span class="tech-chip">MySQL</span><span class="tech-chip">REST API</span><span class="tech-chip">Python</span>
+      </div>
+    </div>
+  </div>
+
+        <!-- UPDATED PROJECT: Counterfeit Drug Analysis System -->
+  <div class="proj-card">
+    <div class="proj-thumb">
+      <div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 55% 45%,rgba(120,255,180,.12),transparent 70%)"></div>
+
+      <div class="proj-num">08</div>
+
+      <div class="proj-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24"
+             fill="none"
+             stroke="var(--accent)"
+             stroke-width="1.5"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+
+          <path d="M9 3h6"></path>
+          <path d="M10 3v4"></path>
+          <path d="M14 3v4"></path>
+          <path d="M8 7h8"></path>
+          <path d="M7 11h10"></path>
+          <path d="M9 15h6"></path>
+          <path d="M10 19h4"></path>
+          <path d="M12 7v12"></path>
+
+        </svg>
+      </div>
+    </div>
+
+    <div class="proj-body">
+
+      <div class="proj-tags">
+        <span class="tag">Blockchain</span>
+        <span class="tag">Healthcare AI</span>
+        <span class="tag">Supply Chain</span>
+        <span class="tag">IoT</span>
+        <span class="tag">Smart Contracts</span>
       </div>
 
-      <div class="proj-card">
-        <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 70% 50%,rgba(0,200,255,.15),transparent 70%)"></div><div class="proj-num">02</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h6l-3 6h-3"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div></div>
-        <div class="proj-body">
-          <div class="proj-tags"><span class="tag">Python</span><span class="tag">Genetic Algorithm</span><span class="tag">Metaheuristics</span></div>
-          <div class="proj-title">Genetic Algorithm for Vehicle Routing Optimization</div>
-          <div class="proj-desc">Solved the NP-hard VRP using custom chromosome encoding, selection, crossover and mutation operators with constraint-aware fitness evaluation.</div>
-          <div class="proj-footer">
-            <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
-            <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
-          </div>
-        </div>
-        <div class="proj-detail">
-          <h4>Project Overview</h4>
-          <p>Implemented a Genetic Algorithm to solve the Vehicle Routing Problem (VRP), an NP-hard combinatorial optimization challenge central to logistics and supply chain management.</p>
-          <ul>
-            <li>Custom chromosome encoding representing delivery route permutations</li>
-            <li>Tournament selection, order crossover (OX), and swap mutation operators</li>
-            <li>Constraint-aware fitness function penalizing capacity violations</li>
-            <li>Benchmarked multiple runs for convergence stability analysis</li>
-            <li>Achieved significant route distance reduction vs. greedy baseline</li>
-          </ul>
-          <div class="tech-used">
-            <span class="tech-chip">Python</span><span class="tech-chip">NumPy</span><span class="tech-chip">Matplotlib</span><span class="tech-chip">Metaheuristics</span><span class="tech-chip">Optimization</span>
-          </div>
-        </div>
+      <div class="proj-title">
+        Counterfeit Drug Analysis & Authentication System
       </div>
 
-      <div class="proj-card">
-        <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 50% 30%,rgba(255,180,0,.12),transparent 70%)"></div><div class="proj-num">03</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div></div>
-        <div class="proj-body">
-          <div class="proj-tags"><span class="tag">React.js</span><span class="tag">Flask</span><span class="tag">REST API</span><span class="tag">MySQL</span></div>
-          <div class="proj-title">AI-Powered Invoice Automation System</div>
-          <div class="proj-desc">Full-stack app for invoice processing and workflow automation. Modular OOP backend with RESTful APIs and structured MySQL schema. React.js frontend with Flask backend.</div>
-          <div class="proj-footer">
-            <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
-            <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
-          </div>
-        </div>
-        <div class="proj-detail">
-          <h4>Project Overview</h4>
-          <p>A full-stack invoice processing and management system with AI-assisted data extraction and automated workflow routing capabilities.</p>
-          <ul>
-            <li>React.js frontend with dynamic form handling and dashboard views</li>
-            <li>Flask RESTful backend with modular OOP architecture</li>
-            <li>MySQL schema designed for invoice lifecycle management</li>
-            <li>Automated approval routing and status tracking pipeline</li>
-            <li>AI-assisted field extraction from invoice documents</li>
-          </ul>
-          <div class="tech-used">
-            <span class="tech-chip">React.js</span><span class="tech-chip">Flask</span><span class="tech-chip">MySQL</span><span class="tech-chip">REST API</span><span class="tech-chip">Python</span>
-          </div>
-        </div>
+      <div class="proj-desc">
+        Developed a blockchain-enabled pharmaceutical authentication system
+        designed to improve drug traceability, detect counterfeit medicines,
+        and enhance transparency across the healthcare supply chain.
       </div>
 
-      <div class="proj-card">
-        <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 40% 60%,rgba(255,60,120,.10),transparent 70%)"></div><div class="proj-num">04</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div></div>
-        <div class="proj-body">
-          <div class="proj-tags"><span class="tag">Python</span><span class="tag">Data Modeling</span><span class="tag">Healthcare</span></div>
-          <div class="proj-title">Medical Supply Chain Analytics & Modeling</div>
-          <div class="proj-desc">Modeled healthcare logistics workflows — suppliers, warehouses, distribution nodes, facilities. Identified bottlenecks and optimization opportunities in pharmaceutical distribution pipelines.</div>
-          <div class="proj-footer">
-            <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
-            <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
-          </div>
-        </div>
-        <div class="proj-detail">
-          <h4>Project Overview</h4>
-          <p>End-to-end modeling of pharmaceutical supply chain networks — from supplier procurement to patient delivery — with bottleneck identification and optimization recommendations.</p>
-          <ul>
-            <li>Mapped multi-tier supply chain: suppliers → warehouses → distribution → facilities</li>
-            <li>Demand forecasting and inventory level optimization</li>
-            <li>Identified critical path delays and single-points-of-failure</li>
-            <li>Simulation of disruption scenarios (stockouts, supplier delays)</li>
-          </ul>
-          <div class="tech-used">
-            <span class="tech-chip">Python</span><span class="tech-chip">Pandas</span><span class="tech-chip">Matplotlib</span><span class="tech-chip">Data Modeling</span>
-          </div>
-        </div>
+      <div class="proj-footer">
+        <a href="https://github.com/ashwanirawat113/Counterfeit-Drug-Analysis-System"
+           target="_blank"
+           class="proj-link">
+           ↗ GitHub
+        </a>
+
+        <button class="proj-toggle"
+                onclick="toggleDetail(this)">
+                + Details
+        </button>
       </div>
 
-      <div class="proj-card">
-        <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 60% 40%,rgba(0,255,200,.10),transparent 70%)"></div><div class="proj-num">05</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div></div>
-        <div class="proj-body">
-          <div class="proj-tags"><span class="tag">Embedded C</span><span class="tag">8051</span><span class="tag">GPIO</span></div>
-          <div class="proj-title">Motion-Based Door Opener (8051 MCU)</div>
-          <div class="proj-desc">Proximity-triggered automatic door system using 8051 microcontroller. GPIO interfacing, embedded control flow, and real-time signal handling with repeated reliability testing.</div>
-          <div class="proj-footer">
-            <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
-            <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
-          </div>
-        </div>
-        <div class="proj-detail">
-          <h4>Project Overview</h4>
-          <p>Designed and implemented an automatic door opener system triggered by proximity sensor input, programmed on the 8051 microcontroller using embedded C.</p>
-          <ul>
-            <li>IR proximity sensor interfacing via GPIO pins on 8051</li>
-            <li>Real-time interrupt-driven control flow for reliable triggering</li>
-            <li>Motor driver integration for physical door actuation</li>
-            <li>Debounce logic and timeout mechanisms for robustness</li>
-            <li>Verified with repeated lab testing for consistent performance</li>
-          </ul>
-          <div class="tech-used">
-            <span class="tech-chip">Embedded C</span><span class="tech-chip">8051</span><span class="tech-chip">Keil IDE</span><span class="tech-chip">GPIO</span><span class="tech-chip">Proteus</span>
-          </div>
-        </div>
-      </div>
+    </div>
 
-      <div class="proj-card">
-        <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 30% 70%,rgba(255,200,0,.10),transparent 70%)"></div><div class="proj-num">06</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.08 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.18L6 1a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8a16 16 0 0 0 8.91 8.91l1.17-1.17a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17z"/><polyline points="16 2 20 2 20 6"/><line x1="14" y1="8" x2="20" y2="2"/></svg></div></div>
-        <div class="proj-body">
-          <div class="proj-tags"><span class="tag">Python</span><span class="tag">python-can</span><span class="tag">CAN Bus</span><span class="tag">Error Injection</span></div>
-          <div class="proj-title">CAN Communication & Error Frame Simulation</div>
-          <div class="proj-desc">Simulated CAN message transmission via virtual CAN bus using python-can. Implemented bit error, stuff error, and CRC error injection to evaluate fault handling without hardware.</div>
-          <div class="proj-footer">
-            <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
-            <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
-          </div>
-        </div>
-        <div class="proj-detail">
-          <h4>Project Overview</h4>
-          <p>Developed a complete virtual CAN bus simulation in Python to test error frame handling without physical hardware — covering three error types as defined by the CAN protocol.</p>
-          <ul>
-            <li>Virtual CAN bus with loopback using python-can library (receive_own_messages=True)</li>
-            <li>Bit Error: Randomly flips LSB of data byte with 30% probability using XOR</li>
-            <li>Stuff Error: Detects 6+ consecutive identical bits violating bit-stuffing rules</li>
-            <li>CRC Error: Simulates checksum mismatch via fake CRC computation (sum % 256 vs 0xAA)</li>
-            <li>Custom listener classes log errors with timestamps; all results verified against expected CAN protocol behaviour</li>
-          </ul>
-          <div class="tech-used">
-            <span class="tech-chip">Python</span><span class="tech-chip">python-can</span><span class="tech-chip">CAN Protocol</span><span class="tech-chip">Bit Manipulation</span><span class="tech-chip">Embedded Systems</span>
-          </div>
-        </div>
-      </div>
+    <div class="proj-detail">
 
-      <div class="proj-card">
-        <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 70% 30%,rgba(100,80,255,.12),transparent 70%)"></div><div class="proj-num">07</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><line x1="10" y1="6" x2="14" y2="6"/><line x1="10" y1="18" x2="14" y2="18"/><path d="M12 10v4"/><path d="M9 13l3 3 3-3"/></svg></div></div>
-        <div class="proj-body">
-          <div class="proj-tags"><span class="tag">OpenModelica</span><span class="tag">Kalman Filter</span><span class="tag">SoC Estimation</span></div>
-          <div class="proj-title">Battery Discharge & SoC Estimation (Kalman Filter)</div>
-          <div class="proj-desc">Battery discharge simulation in OpenModelica using OCV, internal resistance, and rated capacity. Kalman filtering to estimate state of charge under varying discharge conditions.</div>
-          <div class="proj-footer">
-            <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
-            <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
-          </div>
-        </div>
-        <div class="proj-detail">
-          <h4>Project Overview</h4>
-          <p>Simulated lithium-ion battery discharge behaviour and applied Kalman Filter algorithms for accurate State of Charge (SoC) estimation under varying load conditions.</p>
-          <ul>
-            <li>OpenModelica model using OCV curve, internal resistance, and rated capacity parameters</li>
-            <li>Kalman Filter implementation for noise-tolerant SoC estimation</li>
-            <li>Tested under constant and variable discharge current profiles</li>
-            <li>Compared estimated SoC vs. coulomb counting baseline</li>
-            <li>Application: EV battery management systems (BMS)</li>
-          </ul>
-          <div class="tech-used">
-            <span class="tech-chip">OpenModelica</span><span class="tech-chip">Kalman Filter</span><span class="tech-chip">Python</span><span class="tech-chip">Control Systems</span>
-          </div>
-        </div>
-      </div>
+      <h4>Project Overview</h4>
 
-      <!-- NEW PROJECT 08: Bluetooth Home Automation -->
-      <div class="proj-card">
-        <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 45% 55%,rgba(0,180,255,.14),transparent 70%)"></div><div class="proj-num">08</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div></div>
-        <div class="proj-body">
-          <div class="proj-tags"><span class="tag">Embedded C</span><span class="tag">8051</span><span class="tag">Bluetooth</span><span class="tag">Proteus</span></div>
-          <div class="proj-title">Bluetooth-Controlled Home Automation (8051 MCU)</div>
-          <div class="proj-desc">Wireless home automation system using HC-05 Bluetooth module and AT89C51 (8051) microcontroller. Controls fan, lights and TV via Android smartphone — simulated in Proteus and tested on hardware.</div>
-          <div class="proj-footer">
-            <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
-            <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
-          </div>
-        </div>
-        <div class="proj-detail">
-          <h4>Project Overview</h4>
-          <p>Built a cost-effective Bluetooth home automation system using the 8051 microcontroller. Users send commands via an Android app over Bluetooth to wirelessly control household appliances without internet dependency.</p>
-          <ul>
-            <li>AT89C51 microcontroller decodes UART signals from HC-05 Bluetooth module (9600 baud, 11.0592 MHz clock)</li>
-            <li>Commands 'a'–'f' toggle Fan ON/OFF, Light ON/OFF, and TV ON/OFF via relay activation</li>
-            <li>3× 5V relay modules with electrical isolation protect the low-voltage MCU from 12V loads</li>
-            <li>LCD display provides real-time appliance status feedback</li>
-            <li>Verified in Proteus 8 simulation before physical hardware testing; ~1s response time on real device</li>
-            <li>Adheres to IEEE 802.15.1 (Bluetooth), IEC 60664-1 (insulation), and RoHS standards</li>
-          </ul>
-          <div class="tech-used">
-            <span class="tech-chip">Embedded C</span><span class="tech-chip">AT89C51 / 8051</span><span class="tech-chip">HC-05 Bluetooth</span><span class="tech-chip">Relay Module</span><span class="tech-chip">Keil IDE</span><span class="tech-chip">Proteus</span><span class="tech-chip">UART</span>
-          </div>
-        </div>
-      </div>
+      <p>
+        Engineered a secure pharmaceutical supply-chain analysis system
+        integrating blockchain architecture, smart contracts, and
+        traceability mechanisms to combat counterfeit drug distribution
+        and improve healthcare product authenticity verification.
+      </p>
 
-      <!-- NEW PROJECT 09: Smart Attendance System -->
-      <div class="proj-card">
-        <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 55% 45%,rgba(255,100,200,.12),transparent 70%)"></div><div class="proj-num">09</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="18" cy="8" r="2" stroke="var(--accent2)"/><path d="M21 10.5c.5-.3 1-.7 1-1.5a2 2 0 0 0-2-2"/></svg></div></div>
-        <div class="proj-body">
-          <div class="proj-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Face Recognition</span><span class="tag">Flask</span></div>
-          <div class="proj-title">Smart Attendance System with Face Recognition</div>
-          <div class="proj-desc">Automated attendance marking system using real-time face recognition via OpenCV and the face_recognition library, with a Flask web interface for records management and export.</div>
-          <div class="proj-footer">
-            <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
-            <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
-          </div>
-        </div>
-        <div class="proj-detail">
-          <h4>Project Overview</h4>
-          <p>Developed a fully automated attendance system replacing manual roll calls with real-time facial recognition. The system captures live video, identifies registered faces, and marks attendance instantly.</p>
-          <ul>
-            <li>OpenCV for live video capture and frame processing</li>
-            <li>face_recognition library (dlib-based) for 128-d face encoding and matching</li>
-            <li>Pre-registered student face encodings stored in a structured database</li>
-            <li>Flask web dashboard for viewing, filtering, and exporting attendance records as CSV</li>
-            <li>Handles multiple faces per frame for classroom-scale deployment</li>
-            <li>Liveness detection flag to prevent photo spoofing</li>
-          </ul>
-          <div class="tech-used">
-            <span class="tech-chip">Python</span><span class="tech-chip">OpenCV</span><span class="tech-chip">face_recognition</span><span class="tech-chip">Flask</span><span class="tech-chip">SQLite</span><span class="tech-chip">NumPy</span>
-          </div>
-        </div>
+      <ul>
+        <li>Designed blockchain-based drug authentication workflow for secure pharmaceutical tracking</li>
+
+        <li>Implemented smart contract logic for immutable transaction validation and supply-chain transparency</li>
+
+        <li>Integrated multi-entity pharmaceutical flow involving manufacturers, distributors, transporters, and retailers</li>
+
+        <li>Focused on healthcare-oriented system reliability, tamper resistance, and decentralized verification</li>
+
+        <li>Enabled end-to-end traceability for pharmaceutical products across distributed supply-chain stages</li>
+
+        <li>Explored scalable intelligent infrastructure for healthcare security and counterfeit detection applications</li>
+      </ul>
+
+      <div class="tech-used">
+        <span class="tech-chip">Blockchain</span>
+        <span class="tech-chip">Smart Contracts</span>
+        <span class="tech-chip">Ethereum</span>
+        <span class="tech-chip">IoT</span>
+        <span class="tech-chip">Healthcare Systems</span>
+        <span class="tech-chip">Supply Chain Security</span>
       </div>
 
     </div>
   </div>
-</section>
 
-<div class="divider"></div>
+  <div class="proj-card">
+    <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 60% 40%,rgba(0,255,200,.10),transparent 70%)"></div><div class="proj-num">05</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div></div>
+    <div class="proj-body">
+      <div class="proj-tags"><span class="tag">Embedded C</span><span class="tag">8051</span><span class="tag">GPIO</span></div>
+      <div class="proj-title">Motion-Based Door Opener (8051 MCU)</div>
+      <div class="proj-desc">Proximity-triggered automatic door system using 8051 microcontroller. GPIO interfacing, embedded control flow, and real-time signal handling with repeated reliability testing.</div>
+      <div class="proj-footer">
+        <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
+        <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
+      </div>
+    </div>
+    <div class="proj-detail">
+      <h4>Project Overview</h4>
+      <p>Designed and implemented an automatic door opener system triggered by proximity sensor input, programmed on the 8051 microcontroller using embedded C.</p>
+      <ul>
+        <li>IR proximity sensor interfacing via GPIO pins on 8051</li>
+        <li>Real-time interrupt-driven control flow for reliable triggering</li>
+        <li>Motor driver integration for physical door actuation</li>
+        <li>Debounce logic and timeout mechanisms for robustness</li>
+        <li>Verified with repeated lab testing for consistent performance</li>
+      </ul>
+      <div class="tech-used">
+        <span class="tech-chip">Embedded C</span><span class="tech-chip">8051</span><span class="tech-chip">Keil IDE</span><span class="tech-chip">GPIO</span><span class="tech-chip">Proteus</span>
+      </div>
+    </div>
+  </div>
 
-<!-- ══════════ CERTIFICATIONS ══════════ -->
-<section id="certifications">
-  <div class="wrap">
-    <div class="sec-eyebrow"><span class="sec-eyebrow-line"></span>Credentials</div>
-    <h2 class="sec-title">Certifications &<br><span class="dim">Courses</span></h2>
-    <div class="cert-grid">
+  <div class="proj-card">
+    <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 30% 70%,rgba(255,200,0,.10),transparent 70%)"></div><div class="proj-num">06</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.08 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.18L6 1a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8a16 16 0 0 0 8.91 8.91l1.17-1.17a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17z"/><polyline points="16 2 20 2 20 6"/><line x1="14" y1="8" x2="20" y2="2"/></svg></div></div>
+    <div class="proj-body">
+      <div class="proj-tags"><span class="tag">Python</span><span class="tag">python-can</span><span class="tag">CAN Bus</span><span class="tag">Error Injection</span></div>
+      <div class="proj-title">CAN Communication & Error Frame Simulation</div>
+      <div class="proj-desc">Simulated CAN message transmission via virtual CAN bus using python-can. Implemented bit error, stuff error, and CRC error injection to evaluate fault handling without hardware.</div>
+      <div class="proj-footer">
+        <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
+        <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
+      </div>
+    </div>
+    <div class="proj-detail">
+      <h4>Project Overview</h4>
+      <p>Developed a complete virtual CAN bus simulation in Python to test error frame handling without physical hardware — covering three error types as defined by the CAN protocol.</p>
+      <ul>
+        <li>Virtual CAN bus with loopback using python-can library (receive_own_messages=True)</li>
+        <li>Bit Error: Randomly flips LSB of data byte with 30% probability using XOR</li>
+        <li>Stuff Error: Detects 6+ consecutive identical bits violating bit-stuffing rules</li>
+        <li>CRC Error: Simulates checksum mismatch via fake CRC computation (sum % 256 vs 0xAA)</li>
+        <li>Custom listener classes log errors with timestamps; all results verified against expected CAN protocol behaviour</li>
+      </ul>
+      <div class="tech-used">
+        <span class="tech-chip">Python</span><span class="tech-chip">python-can</span><span class="tech-chip">CAN Protocol</span><span class="tech-chip">Bit Manipulation</span><span class="tech-chip">Embedded Systems</span>
+      </div>
+    </div>
+  </div>
 
-      <div class="cert-card">
-        <div class="cert-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
-        <div>
-          <div class="cert-issuer">Oracle</div>
-          <div class="cert-name">Oracle Cloud Infrastructure 2025 — Generative AI Professional</div>
-          <div class="cert-meta"><span class="cert-badge">✓ Certified</span><span class="cert-date">Aug 2025 – Aug 2027</span></div>
-        </div>
+  <div class="proj-card">
+    <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 70% 30%,rgba(100,80,255,.12),transparent 70%)"></div><div class="proj-num">07</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><line x1="10" y1="6" x2="14" y2="6"/><line x1="10" y1="18" x2="14" y2="18"/><path d="M12 10v4"/><path d="M9 13l3 3 3-3"/></svg></div></div>
+    <div class="proj-body">
+      <div class="proj-tags"><span class="tag">OpenModelica</span><span class="tag">Kalman Filter</span><span class="tag">SoC Estimation</span></div>
+      <div class="proj-title">Battery Discharge & SoC Estimation (Kalman Filter)</div>
+      <div class="proj-desc">Battery discharge simulation in OpenModelica using OCV, internal resistance, and rated capacity. Kalman filtering to estimate state of charge under varying discharge conditions.</div>
+      <div class="proj-footer">
+        <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
+        <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
+      </div>
+    </div>
+    <div class="proj-detail">
+      <h4>Project Overview</h4>
+      <p>Simulated lithium-ion battery discharge behaviour and applied Kalman Filter algorithms for accurate State of Charge (SoC) estimation under varying load conditions.</p>
+      <ul>
+        <li>OpenModelica model using OCV curve, internal resistance, and rated capacity parameters</li>
+        <li>Kalman Filter implementation for noise-tolerant SoC estimation</li>
+        <li>Tested under constant and variable discharge current profiles</li>
+        <li>Compared estimated SoC vs. coulomb counting baseline</li>
+        <li>Application: EV battery management systems (BMS)</li>
+      </ul>
+      <div class="tech-used">
+        <span class="tech-chip">OpenModelica</span><span class="tech-chip">Kalman Filter</span><span class="tech-chip">Python</span><span class="tech-chip">Control Systems</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEW PROJECT 08: Bluetooth Home Automation -->
+  <div class="proj-card">
+    <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 45% 55%,rgba(0,180,255,.14),transparent 70%)"></div><div class="proj-num">08</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div></div>
+    <div class="proj-body">
+      <div class="proj-tags"><span class="tag">Embedded C</span><span class="tag">8051</span><span class="tag">Bluetooth</span><span class="tag">Proteus</span></div>
+      <div class="proj-title">Bluetooth-Controlled Home Automation (8051 MCU)</div>
+      <div class="proj-desc">Wireless home automation system using HC-05 Bluetooth module and AT89C51 (8051) microcontroller. Controls fan, lights and TV via Android smartphone — simulated in Proteus and tested on hardware.</div>
+      <div class="proj-footer">
+        <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
+        <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
+      </div>
+    </div>
+    <div class="proj-detail">
+      <h4>Project Overview</h4>
+      <p>Built a cost-effective Bluetooth home automation system using the 8051 microcontroller. Users send commands via an Android app over Bluetooth to wirelessly control household appliances without internet dependency.</p>
+      <ul>
+        <li>AT89C51 microcontroller decodes UART signals from HC-05 Bluetooth module (9600 baud, 11.0592 MHz clock)</li>
+        <li>Commands 'a'–'f' toggle Fan ON/OFF, Light ON/OFF, and TV ON/OFF via relay activation</li>
+        <li>3× 5V relay modules with electrical isolation protect the low-voltage MCU from 12V loads</li>
+        <li>LCD display provides real-time appliance status feedback</li>
+        <li>Verified in Proteus 8 simulation before physical hardware testing; ~1s response time on real device</li>
+        <li>Adheres to IEEE 802.15.1 (Bluetooth), IEC 60664-1 (insulation), and RoHS standards</li>
+      </ul>
+      <div class="tech-used">
+        <span class="tech-chip">Embedded C</span><span class="tech-chip">AT89C51 / 8051</span><span class="tech-chip">HC-05 Bluetooth</span><span class="tech-chip">Relay Module</span><span class="tech-chip">Keil IDE</span><span class="tech-chip">Proteus</span><span class="tech-chip">UART</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEW PROJECT 09: Smart Attendance System -->
+  <div class="proj-card">
+    <div class="proj-thumb"><div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 55% 45%,rgba(255,100,200,.12),transparent 70%)"></div><div class="proj-num">09</div><div class="proj-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="18" cy="8" r="2" stroke="var(--accent2)"/><path d="M21 10.5c.5-.3 1-.7 1-1.5a2 2 0 0 0-2-2"/></svg></div></div>
+    <div class="proj-body">
+      <div class="proj-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Face Recognition</span><span class="tag">Flask</span></div>
+      <div class="proj-title">Smart Attendance System with Face Recognition</div>
+      <div class="proj-desc">Automated attendance marking system using real-time face recognition via OpenCV and the face_recognition library, with a Flask web interface for records management and export.</div>
+      <div class="proj-footer">
+        <a href="https://github.com/ashwanirawat113" target="_blank" class="proj-link">↗ GitHub</a>
+        <button class="proj-toggle" onclick="toggleDetail(this)">+ Details</button>
+      </div>
+    </div>
+    <div class="proj-detail">
+      <h4>Project Overview</h4>
+      <p>Developed a fully automated attendance system replacing manual roll calls with real-time facial recognition. The system captures live video, identifies registered faces, and marks attendance instantly.</p>
+      <ul>
+        <li>OpenCV for live video capture and frame processing</li>
+        <li>face_recognition library (dlib-based) for 128-d face encoding and matching</li>
+        <li>Pre-registered student face encodings stored in a structured database</li>
+        <li>Flask web dashboard for viewing, filtering, and exporting attendance records as CSV</li>
+        <li>Handles multiple faces per frame for classroom-scale deployment</li>
+        <li>Liveness detection flag to prevent photo spoofing</li>
+      </ul>
+      <div class="tech-used">
+        <span class="tech-chip">Python</span><span class="tech-chip">OpenCV</span><span class="tech-chip">face_recognition</span><span class="tech-chip">Flask</span><span class="tech-chip">SQLite</span><span class="tech-chip">NumPy</span>
+      </div>
+    </div>
+  </div>
+
+  
+    <!-- NEW PROJECT 10: Self-Healing RAG Pipeline -->
+  <div class="proj-card">
+    <div class="proj-thumb">
+      <div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 55% 45%,rgba(0,255,200,.12),transparent 70%)"></div>
+
+      <div class="proj-num">10</div>
+
+      <div class="proj-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+             stroke="var(--accent)" stroke-width="1.5"
+             stroke-linecap="round" stroke-linejoin="round">
+
+          <path d="M4 6h16"></path>
+          <path d="M4 12h10"></path>
+          <path d="M4 18h16"></path>
+          <circle cx="18" cy="12" r="3" stroke="var(--accent2)"></circle>
+
+        </svg>
+      </div>
+    </div>
+
+    <div class="proj-body">
+
+      <div class="proj-tags">
+        <span class="tag">Python</span>
+        <span class="tag">LangChain</span>
+        <span class="tag">LLMs</span>
+        <span class="tag">RAG</span>
+        <span class="tag">AI Pipelines</span>
       </div>
 
-      <div class="cert-card">
-        <div class="cert-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
-        <div>
-          <div class="cert-issuer">upGrad × Microsoft</div>
-          <div class="cert-name">Generative AI Foundations</div>
-          <div class="cert-meta"><span class="cert-badge">✓ Completed</span><span class="cert-date">Jul 2025</span></div>
-        </div>
+      <div class="proj-title">
+        Self-Healing RAG Pipeline
       </div>
 
-      <div class="cert-card">
-        <div class="cert-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-        <div>
-          <div class="cert-issuer">AICTE</div>
-          <div class="cert-name">Java Full Stack with React.js & AI</div>
-          <div class="cert-meta"><span class="cert-badge">✓ Completed</span><span class="cert-date">Dec 2024</span></div>
-        </div>
+      <div class="proj-desc">
+        Designed a self-healing Retrieval-Augmented Generation (RAG)
+        pipeline capable of adaptive query handling, retrieval validation,
+        and automated fallback correction for reliable LLM-driven workflows.
       </div>
 
-      <div class="cert-card">
-        <div class="cert-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
-        <div>
-          <div class="cert-issuer">Amazon Web Services</div>
-          <div class="cert-name">AWS Cloud Practitioner Practice Modules (CLF-C02) & Amazon Athena</div>
-          <div class="cert-meta"><span class="cert-badge">✓ Completed</span></div>
-        </div>
+      <div class="proj-footer">
+        <a href="https://github.com/ashwanirawat113/self-healing-rag"
+           target="_blank"
+           class="proj-link">
+           ↗ GitHub
+        </a>
+
+        <button class="proj-toggle"
+                onclick="toggleDetail(this)">
+                + Details
+        </button>
+      </div>
+
+    </div>
+
+    <div class="proj-detail">
+
+      <h4>Project Overview</h4>
+
+      <p>
+        Built an intelligent Retrieval-Augmented Generation pipeline
+        engineered to improve robustness and reliability in LLM-based
+        systems through adaptive recovery and validation mechanisms.
+      </p>
+
+      <ul>
+        <li>Implemented retrieval validation to detect low-confidence or irrelevant document matches</li>
+
+        <li>Integrated fallback correction strategies for failed or weak retrieval responses</li>
+
+        <li>Designed modular query-processing architecture for scalable AI workflow experimentation</li>
+
+        <li>Improved reliability of LLM outputs through adaptive context handling and response refinement</li>
+
+        <li>Structured the pipeline for extensibility across future intelligent system applications</li>
+
+        <li>Focused on resilient AI infrastructure and practical deployment-oriented system design</li>
+      </ul>
+
+      <div class="tech-used">
+        <span class="tech-chip">Python</span>
+        <span class="tech-chip">LangChain</span>
+        <span class="tech-chip">LLMs</span>
+        <span class="tech-chip">Vector DB</span>
+        <span class="tech-chip">Prompt Engineering</span>
+        <span class="tech-chip">AI Systems</span>
       </div>
 
     </div>
   </div>
-</section>
+        <!-- NEW PROJECT 11: High-Performance DPI Engine -->
+  <div class="proj-card">
+    <div class="proj-thumb">
+      <div class="proj-thumb-bg" style="background:radial-gradient(ellipse at 55% 45%,rgba(0,180,255,.12),transparent 70%)"></div>
+
+      <div class="proj-num">11</div>
+
+      <div class="proj-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24"
+             fill="none"
+             stroke="var(--accent)"
+             stroke-width="1.5"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+
+          <path d="M4 6h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 18h16"></path>
+
+          <circle cx="8" cy="6" r="1.5" fill="var(--accent2)"></circle>
+          <circle cx="16" cy="12" r="1.5" fill="var(--accent2)"></circle>
+          <circle cx="10" cy="18" r="1.5" fill="var(--accent2)"></circle>
+
+        </svg>
+      </div>
+    </div>
+
+    <div class="proj-body">
+
+      <div class="proj-tags">
+        <span class="tag">C++</span>
+        <span class="tag">Multithreading</span>
+        <span class="tag">Networking</span>
+        <span class="tag">DPI</span>
+        <span class="tag">Systems Engineering</span>
+      </div>
+
+      <div class="proj-title">
+        High-Performance Multi-threaded DPI Engine
+      </div>
+
+      <div class="proj-desc">
+        Developed a high-performance Deep Packet Inspection (DPI) engine
+        for network traffic analysis using multi-threaded packet processing
+        and optimized systems-level architecture for scalable throughput.
+      </div>
+
+      <div class="proj-footer">
+        <a href="https://github.com/ashwanirawat113/High-Performance-Multi-threaded-DPI-Engine-for-Network-Traffic-Analysis"
+           target="_blank"
+           class="proj-link">
+           ↗ GitHub
+        </a>
+
+        <button class="proj-toggle"
+                onclick="toggleDetail(this)">
+                + Details
+        </button>
+      </div>
+
+    </div>
+
+    <div class="proj-detail">
+
+      <h4>Project Overview</h4>
+
+      <p>
+        Engineered a scalable Deep Packet Inspection system focused on
+        efficient real-time traffic analysis through concurrent packet
+        processing and systems-level performance optimization.
+      </p>
+
+      <ul>
+        <li>Implemented multi-threaded packet analysis architecture for parallel traffic processing</li>
+
+        <li>Designed high-throughput DPI workflow for scalable network traffic inspection</li>
+
+        <li>Optimized packet parsing and inspection pipelines for improved processing efficiency</li>
+
+        <li>Applied systems programming concepts including concurrency, synchronization, and thread management</li>
+
+        <li>Focused on low-latency traffic analysis and resource-efficient execution</li>
+
+        <li>Demonstrated practical understanding of networking protocols and performance-oriented system design</li>
+      </ul>
+
+      <div class="tech-used">
+        <span class="tech-chip">C++</span>
+        <span class="tech-chip">Multithreading</span>
+        <span class="tech-chip">Network Analysis</span>
+        <span class="tech-chip">Concurrency</span>
+        <span class="tech-chip">Packet Inspection</span>
+        <span class="tech-chip">Systems Programming</span>
+      </div>
+
+    </div>
+  </div>
+
+</div>
 
 <div class="divider"></div>
 
